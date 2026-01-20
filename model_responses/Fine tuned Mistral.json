@@ -1,0 +1,402 @@
+[
+  {
+    "id": 0,
+    "index": "A1.234",
+    "topic": "Binomial Distribution",
+    "difficulty": "Basic",
+    "question": "A ball is drawn from an urn containing three white and three black balls. After the ball is drawn, it is then replaced and another ball is drawn. This goes on indefinitely. What is the probability that of the first four balls drawn, exactly two are white?",
+    "aire_mistral_answer": "Define the probability of drawing a white ball as p = 3/6 = 1/2 and a black ball as 1 - p = 1/2. Use the binomial probability formula to find the probability of drawing exactly two white balls in four trials: P(X = 2) = C(4, 2) * p^2 * (1-p)^2. Calculate the binomial coefficient C(4, 2) = 6. Substitute the values: P(X = 2) = 6 * (1/2)^2 * (1/2)^2 = 6 * 1/16 = 6/16 = 3/8 = 0.375. Conclusion: The probability of drawing exactly two white balls in four trials is 0.375."
+  },
+  {
+    "id": 1,
+    "index": "A1.567",
+    "topic": "Probability",
+    "difficulty": "Basic",
+    "question": "A game show has a prize with a 5% chance of being won. If a contestant plays 7 games, what is the probability of winning the prize at least once?",
+    "aire_mistral_answer": "To find the probability of winning at least once in 7 games, it's easier to calculate the probability of not winning at all and subtracting that from 1. The probability of not winning a single game is 0.95 (1 - 0.05). For 7 games, the probability of not winning at all is: P(not winning) = (0.95)^7 ≈ 0.737 Now, we find the probability of winning at least once: P(winning at least once) = 1 - P(not winning) ≈ 1 - 0.737 ≈ 0.263 So, the probability of winning the prize at least once in 7 games is approximately 0.263 or 26.3%."
+  },
+  {
+    "id": 2,
+    "index": "A2.123",
+    "topic": "Conditional Probability",
+    "difficulty": "Intermediate",
+    "question": "Among a group of 200 students, 137 students are enrolled in a mathematics class, 50 in a history class, and 124 in a music class. Additionally, 33 students are enrolled in both mathematics and history, 29 in both history and music, and 92 in both mathematics and music. Finally, 18 students are enrolled in all three classes. What is the probability that a randomly selected student is enrolled in at least one of the three classes?",
+    "aire_mistral_answer": "Calculate the total number of students enrolled in at least one class using the principle of inclusion-exclusion. Calculate the probability of being enrolled in at least one class by dividing the number of students enrolled in at least one class by the total number of students. The probability is approximately 0.915. Conclusion: The probability that a randomly selected student is enrolled in at least one of the three classes is approximately 0.915."
+  },
+  {
+    "id": 3,
+    "index": "A2.445",
+    "topic": "Binomial Distribution",
+    "difficulty": "Intermediate",
+    "question": "Approximately 15% of the US population smokes cigarettes. A local government believed their community had a lower smoker rate and commissioned a survey of 400 randomly selected individuals. The survey found that only 42 of the 400 participants smoke cigarettes. If the true proportion of smokers in the community was really 15%, what is the probability of observing 42 or fewer smokers in a sample of 400 people?",
+    "aire_mistral_answer": "Define the true proportion p of smokers in the community. State the null hypothesis H0: p = 0.15 and the alternative hypothesis Ha: p < 0.15. Use the binomial distribution formula to calculate the probability of observing 42 or fewer smokers in a sample of 400. Compute: P(X ≤ 42) = Σ (from x = 0 to 42) [C(400, x) * 0.15^x * (1 - 0.15)^(400 - x)]. Calculate the cumulative probability using the binomial distribution table or software. Determine if the observed result is significant enough to reject the null hypothesis at the given significance level. Conclusion: The probability of observing 42 or fewer smokers in a sample of 400 people, assuming the true proportion is 15%, is calculated using the binomial distribution. This probability helps in determining if the observed data provides strong evidence to reject the null hypothesis."
+  },
+  {
+    "id": 4,
+    "index": "A2.678",
+    "topic": "Probability",
+    "difficulty": "Intermediate",
+    "question": "A factory produces 1000 light bulbs, of which 40 are defective. If 5 bulbs are randomly selected without replacement, what is the probability that exactly 2 of them are defective?",
+    "aire_mistral_answer": "We'll use combinations to solve this problem. First, we calculate the number of ways to choose 2 defective bulbs from 40 and 3 non-defective bulbs from 960. Then, we divide by the total number of ways to choose 5 bulbs from 1000. The number of ways to choose 2 defective bulbs is C(40, 2), and the number of ways to choose 3 non-defective bulbs is C(960, 3). The total number of ways to choose 5 bulbs from 1000 is C(1000, 5). The probability P is given by: P = (C(40, 2) * C(960, 3)) / C(1000, 5) Using the combination formulas: C(n, k) = n! / (k! * (n - k)!) We calculate: C(40, 2) = 780 C(960, 3) = 1,297,060 C(1000, 5) = 2,424,560,000 Now, we can compute the probability: P = (780 * 1,297,060) / 2,424,56"
+  },
+  {
+    "id": 5,
+    "index": "A2.789",
+    "topic": "Binomial Distribution",
+    "difficulty": "Intermediate",
+    "question": "At Selitall Supermarket, 60% of customers pay by credit card. Find the probability that in a randomly selected sample of ten customers, (a) exactly two pay by credit card, (b) more than seven pay by credit card.",
+    "aire_mistral_answer": "Define the random variable X as the number of customers who pay by credit card in a sample of ten. Recognize that X follows a binomial distribution with parameters n = 10 and p = 0.60. Use the binomial probability formula to calculate P(X = 2) and P(X > 7). Compute P(X = 2) using the formula: P(X = 2) = C(10, 2) * 0.60^2 * 0.40^8. Compute P(X > 7) using the complement rule: P(X > 7) = 1 - P(X ≤ 7). Calculate the cumulative probability for X ≤ 7 using the binomial distribution table or software. Find P(X = 2) ≈ 0.351 and P(X > 7) ≈ 0.266. Conclusion: The probability that exactly two customers pay by credit card is approximately 0.351, and the probability that more than seven customers pay by credit card is approximately 0.266."
+  },
+  {
+    "id": 6,
+    "index": "A2.345",
+    "topic": "Poisson Distribution",
+    "difficulty": "Intermediate",
+    "question": "Two identical racing cars are being tested on a circuit. For each car, the number of mechanical breakdowns can be modelled by a Poisson distribution with a mean of one breakdown in 100 laps. If a car breaks down, it is attended and continues on the circuit. The first car is tested for 20 laps and the second car for 40 laps. Find the probability that the service team is called out to attend to breakdowns: (a) once, (b) more than twice.",
+    "aire_mistral_answer": "Define the random variable X as the number of breakdowns for each car. Use the Poisson distribution formula: P(X = k) = (λ^k / k!) * e^(-λ), where λ is the mean number of breakdowns. Calculate the probability of exactly one breakdown for the first car (20 laps) and the second car (40 laps). Sum the probabilities for more than two breakdowns for the second car. Combine the results for both cars. Conclusion: The probabilities for the service team being called out for a certain number of breakdowns are calculated based on the Poisson distribution. Explanation: The Poisson distribution models the number of breakdowns, and the probabilities are calculated based on the mean number of breakdowns per lap. The results provide the likelihood of the service team attending to a specific number of breakdowns."
+  },
+  {
+    "id": 7,
+    "index": "A2.456",
+    "topic": "Normal Distribution",
+    "difficulty": "Intermediate",
+    "question": "Lengths of metal strips produced by a machine are normally distributed with a mean length of 150 cm and a standard deviation of 10 cm. Find the probability that the length of a randomly selected strip is: (a) shorter than 165 cm, (b) within 5 cm of the mean.",
+    "aire_mistral_answer": "Convert the length to a z-score: z = (X - μ) / σ. For part (a): Find the z-score for 165 cm: z = (165 - 150) / 10 = 1.5. Use the standard normal table to find the probability: P(X < 165) = Φ(1.5) ≈ 0.9332. For part (b): Find the range for lengths within 5 cm of the mean (145 cm to 155 cm). Calculate the z-scores for 145 cm and 155 cm: z_1 = (145 - 150) / 10 = -0.5, z_2 = (155 - 150) / 10 = 0.5. Use the standard normal table to find the probabilities: P(X < 155) = Φ(0.5) ≈ 0.6915, P(X < 145) = Φ(-0.5) ≈ 0.3085. Calculate the probability within 5 cm of the mean: P(145"
+  },
+  {
+    "id": 8,
+    "index": "A2.567",
+    "topic": "Probability",
+    "difficulty": "Advanced",
+    "question": "A gambler plays a fair game by flipping a coin. Heads wins $1, tails loses $1. The gambler starts with $50 and stops playing when reaching $0 (ruin) or $200. What is the probability of reaching $200 before going broke?",
+    "aire_mistral_answer": "Define states as the gambler's capital X. The game is a Markov chain with transition probabilities P(i,j) = 0.5 if i + 1 = j or i - 1 = j, and 0 otherwise. We need to find the probability of reaching $200 before $0. Construct the Transition Matrix: The matrix is tridiagonal with 1s on the diagonal and 0.5 on the off-diagonals. Calculate the Absorbing Probabilities: Use the fundamental matrix to find the probability of reaching $200 before $0. The matrix is constructed as follows: Rows and columns correspond to states from $1 to $199. Diagonal elements are 1 - 0.5 = 0.5. Off-diagonal elements are 0.5. Solve for the Absorbing State Probabilities: Use matrix algebra to find the probability of reaching $200 before $0. Let Q be the matrix of transient states and R the matrix of absorbing states ($0 and $200). The probability vector is given by (I - Q)^-1 * R, where I is the identity matrix. Calculate the Desired Probability: The probability of reaching $200 before $0 is the sum of the probabilities in the vector corresponding to the $200 state. Conclusion:"
+  },
+  {
+    "id": 9,
+    "index": "A2.011",
+    "topic": "Discrete Probability",
+    "difficulty": "Intermediate",
+    "question": "Five people have just won a $100 prize and are deciding how to divide the $100 up between them. Assume that whole dollars are used, not cents. Also, for example, giving $50 to the first person and $10 to the second is different from vice versa. (a) How many ways are there to divide up the $100, such that each person gets at least $10?",
+    "aire_mistral_answer": "Step 1: Define the variables x1, x2, x3, x4, and x5 to represent the amount of money each of the five people receives. The constraint x1 ≥ 10, x2 ≥ 10, x3 ≥ 10, x4 ≥ 10, and x5 ≥ 10 ensures that each person gets at least $10. Step 2: Recognize that the problem is equivalent to finding the number of lattice points in the region defined by the inequalities 0 ≤ x1 ≤ 100 - 40 = 60, 0 ≤ x2 ≤ 60 - x1, 0 ≤ x3 ≤ 60 - x1 - x2, 0 ≤ x4 ≤ 60 - x1 - x2 - x3, and 0 ≤ x5 ≤ 60 - x1 - x2 - x3 - x4. Step 3: Use the stars and bars method to count the number of ways to distribute 40 indistinguishable balls into 5 distinguishable boxes, where the number of balls in the i-th box is at most 60 - x1 - ... - xi. The total number of balls is 40, and the number of boxes is 5. Step 4: Calculate the number of ways to distribute the balls using the formula for combinations with restrictions: C(40 + 5"
+  },
+  {
+    "id": 10,
+    "index": "A2.012",
+    "topic": "Conditional Probability",
+    "difficulty": "Intermediate",
+    "question": "A game show presents contestants with four doors: behind one is a car worth $1000, behind another is a forfeit costing -$1000, and behind the remaining two doors is nothing. The contestant picks one door. The host then opens one of the remaining doors to show it is empty. The contestant may stick with their choice or switch to one of the other two unopened doors. What is the optimal strategy if the contestant wants to maximise expected wealth and is risk-averse?",
+    "aire_mistral_answer": "Initial Probabilities: The probability of choosing the car is 1/4, and the probability of choosing the forfeit is 1/4. The probability of choosing an empty door is 1/2. Host's Action: The host will always open an empty door. This action does not change the probabilities for the remaining two doors. Switching Strategy: If the contestant initially chose an empty door, switching to the other unopened door has a 1/2 chance of winning the car and a 1/2 chance of losing -$1000. The expected value of switching is (1/2 * $1000) + (1/2 * -$1000) = $0. Sticking Strategy: If the contestant initially chose the car, sticking with the choice results in a win of $1000. If the contestant initially chose the forfeit, sticking results in a loss of -$1000. Risk-Averse Considerations: Since the contestant is risk-averse, they should prefer the certain outcome of sticking with their choice over the uncertain outcome of switching. Conclusion: The optimal strategy for a risk-averse contestant is to stick with their initial choice, as it avoids the risk of losing -$1000 if they switch and choose the forfeit. The expected value of sticking is $250"
+  },
+  {
+    "id": 11,
+    "index": "A2.890",
+    "topic": "Conditional Probability – Boy or Girl Paradox",
+    "difficulty": "Intermediate",
+    "question": "Mr Bayes has two children. The older child is a girl. What is the probability that both children are girls?",
+    "aire_mistral_answer": "Define the events A = {the older child is a girl} and B = {both children are girls}. Recognize that A is a subset of B, meaning A ⊆ B. Use the principle of inclusion-exclusion to find P(A ∪ B) = P(A) + P(B) - P(A ∩ B). Since A ⊆ B, P(A ∩ B) = P(A). Substitute P(A ∪ B) with 1, P(A) with 1/2, and P(B) with 1/3. Solve for P(B): 1 = 1/2 + 1/3 - 1/2, which simplifies to 1 = 1/3 + 1/2. Combine the fractions: 1 = 5/6. Therefore, the probability that both children are girls is 1/3. Conclusion: The probability that both children are girls is 1/3."
+  },
+  {
+    "id": 12,
+    "index": "A2.901",
+    "topic": "Conditional Probability – Boy or Girl Paradox",
+    "difficulty": "Intermediate",
+    "question": "Mr Laplace has two children. At least one of the children is a girl. What is the probability that both children are girls?",
+    "aire_mistral_answer": "Define the probability of having a girl as p and a boy as 1 - p. Calculate the probability of having at least one girl: P(at least one girl) = 1 - P(no girls) = 1 - (1 - p)^2. Given that at least one child is a girl, find the probability that both children are girls: P(both girls | at least one girl) = (1 - p)^2 / [1 - (1 - p)^2]. Use the given information that the probability of having at least one girl is 0.75: 1 - (1 - p)^2 = 0.75. Solve for p: (1 - p)^2 = 0.25, which gives p = 0.5. Substitute p into the formula for the probability of both children being girls: P(both girls | at least one girl) = (0.5)^2 / 0.75 = 0.333. Conclusion: The probability that both children are girls, given that at least one is a girl, is 0.333."
+  },
+  {
+    "id": 13,
+    "index": "A3.123",
+    "topic": "Probability",
+    "difficulty": "Advanced",
+    "question": "We roll a fair four-sided die. If the result is 1 or 2, we roll once more but otherwise, we stop. What is the probability that the sum total of our rolls is at least 4?",
+    "aire_mistral_answer": "Let's break down the possible outcomes based on the two scenarios: rolling once or twice. Rolling once: The possible outcomes are 1, 2, 3, or 4. The sum of the rolls can only be 4 if we roll a 4 on the first roll. The probability of this happening is 1/4. Rolling twice: We roll twice only if the first roll is 1 or 2. The possible outcomes for the second roll are 1, 2, 3, or 4. We need to find the probability of the sum being at least 4. The sum is 4: Possible pairs are (1,3) and (2,2). The probability of each pair is 1/16, so the total probability for the sum of 4 is 2/16 = 1/8. The sum is 5: Possible pairs are (1,4) and (2,3). The probability of each pair is 1/16, so the total probability for the sum of 5 is 2/16 = 1/8. The sum is 6: The only possible pair is (3,3). The probability of this pair is 1/16. Adding these probabilities gives us the total probability for rolling twice: 1/8 + 1/8 + 1/16 ="
+  },
+  {
+    "id": 14,
+    "index": "A3.234",
+    "topic": "Probability",
+    "difficulty": "Advanced",
+    "question": "A store has 20% off sales on items. If a customer buys 8 items, what is the probability that at least 3 of the items are on sale?",
+    "aire_mistral_answer": "Step 1: Use the complement rule to find the probability of fewer than 3 items on sale. Step 2: Calculate the probability of 0, 1, or 2 items on sale using the binomial formula. Step 3: Compute: P(X < 3) = C(8, 0) * 0.20^0 * 0.80^8 + C(8, 1) * 0.20^1 * 0.80^7 + C(8, 2) * 0.20^2 * 0.80^6. Step 4: Calculate: C(8, 0) = 1, C(8, 1) = 8, C(8, 2) = 28, 0.20^0 = 1, 0.20^1 = 0.20, 0.20^2 = 0.04, 0.80^7 ≈ 0.211, 0.80^6 ≈ 0.262, 0.80^8 ≈ 0.167. Step 5: Compute: P(X < 3) ≈ 0.167 + 0.338 + 0.088 ≈ 0.60. Step 6:"
+  },
+  {
+    "id": 15,
+    "index": "A3.345",
+    "topic": "Probability",
+    "difficulty": "Advanced",
+    "question": "In a population of 200 people, 30 have a certain disease. If 10 people are randomly selected, what is the probability that exactly 4 of them have the disease?",
+    "aire_mistral_answer": "Use the hypergeometric distribution formula: P(X = k) = (C(K, k) * C(N-K, n-k)) / C(N, n). Here, N = 200 (total population), K = 30 (diseased individuals), n = 10 (sample size), k = 4 (diseased individuals in the sample). Compute: C(30, 4) = 27,405, C(170, 6) = 1,053,774, C(200, 10) = 1,679,616. Probability: P(X = 4) = (27,405 * 1,053,774) / 1,679,616 ≈ 0.44. Conclusion: The probability that exactly 4 out of 10 randomly selected people have the disease is approximately 0.44."
+  },
+  {
+    "id": 16,
+    "index": "A3.456",
+    "topic": "Bias and Logistic Thinking",
+    "difficulty": "Advanced",
+    "question": "Let's consider a sex-imbalanced company that consists of 20% women and 80% men. Suppose that the company is very large, consisting of perhaps 20,000 employees. Suppose when someone goes up for promotion at this company, 5 of their colleagues are randomly chosen to provide feedback on their work. Now let's imagine that 10% of the people in the company are prejudiced against the other sex. That is, 10% of men are prejudiced against women, and similarly, 10% of women are prejudiced against men. Who is discriminated against more at the company, men or women?",
+    "aire_mistral_answer": "Consider the probability of a man being evaluated by a prejudiced colleague. There are 80% men and 10% of them are prejudiced, so the probability is 0.8 * 0.1 = 0.08. Consider the probability of a woman being evaluated by a prejudiced colleague. There are 20% women and 10% of them are prejudiced, so the probability is 0.2 * 0.1 = 0.02. Since 0.08 > 0.02, men are more likely to be evaluated by a prejudiced colleague than women. Conclusion: Men are discriminated against more at the company."
+  },
+  {
+    "id": 17,
+    "index": "A3.567",
+    "topic": "Probability Distributions",
+    "difficulty": "Advanced",
+    "question": "Heights of 10 year olds, regardless of gender, closely follow a normal distribution with mean 55 inches and standard deviation 6 inches. (a) What fraction of 10 year olds are taller than 76 inches? (b) If there are 2,000 10 year olds entering Six Flags Magic Mountain in a single day, then compute the expected number of 10 year olds who are at least 76 inches tall. (Assume independence.) (c) Using the binomial distribution, compute the probability that 0 of the 2,000 10 year olds will be at least 76 inches tall. (d) The number of 10 year olds who enter Six Flags Magic Mountain and are at least 76 inches tall in a given day follows a Poisson distribution with mean equal to the value found in part (b). Use the Poisson distribution to identify the probability that no 10 year old will enter the park who is 76 inches or taller.",
+    "aire_mistral_answer": "Convert the height of 76 inches to a z-score using the formula: z = (x - μ) / σ. Calculate the z-score for 76 inches: z = (76 - 55) / 6 = 3.5. Use the standard normal distribution table to find the probability of being taller than 76 inches: P(Z > 3.5) = 0.00023. For part (b), compute the expected number of 10 year olds who are at least 76 inches tall: E(X) = n * P(X = 1) = 2000 * 0.00023 ≈ 0.46. For part (c), use the binomial distribution to find the probability of no 10 year olds being at least 76 inches tall: P(X = 0) = C(2000, 0) * (0.00023)^0 * (0.99977)^2000 ≈ 0.36. For part (d), use the Poisson distribution to find the probability of no 10 year olds being at least 76 inches tall: P(X = 0) = e^(-λ) * (λ^0) / 0! = e^(-0.46) ≈ 0.63."
+  },
+  {
+    "id": 18,
+    "index": "A3.678",
+    "topic": "Poisson Distribution with Uncertainty",
+    "difficulty": "Advanced",
+    "question": "The opponents of soccer team A are of two types: either they are a class 1 or a class 2 team. The number of goals team A scores against a class i opponent is a Poisson random variable with mean λᵢ, where λ₁ = 2, λ₂ = 3. This weekend, the team has two games against teams they are not very familiar with. Assuming that the first team they play is a class 1 team with probability 0.6 and the second is, independently of the class of the first team, a class 1 team with probability 0.3, determine: (a) the expected number of goals team A will score this weekend; (b) the probability that team A will score a total of five goals.",
+    "aire_mistral_answer": "Define the random variables X₁ and X₂ as the number of goals scored by team A in the first and second games, respectively. Calculate the expected number of goals for each game using the law of total expectation. For the first game: E[X₁] = 0.6 × 2 + 0.4 × 3 = 1.2 + 1.2 = 2.4. For the second game: E[X₂] = 0.3 × 2 + 0.7 × 3 = 0.6 + 2.1 = 2.7. Total expected goals: E[X₁ + X₂] = E[X₁] + E[X₂] = 2.4 + 2.7 = 5.1. For part (b), consider all possible combinations of team types and use the Poisson probability mass function to calculate P(X₁ + X₂ = 5). Conclusion: The expected number of goals team A will score this weekend is 5.1."
+  },
+  {
+    "id": 19,
+    "index": "B3.789",
+    "topic": "Gender and Degree Distributions",
+    "difficulty": "Advanced",
+    "question": "Using the provided counts (in thousands) of earned degrees in the U.S. by gender and degree type, perform an exploratory data analysis to understand trends and imbalances. Specifically, analyze: (1) overall gender distribution, (2) the distribution of degrees within each gender, (3) the conditional probability of selecting a male given a Master's degree, (4) gender gap index for each degree type, and (5) the most gender-skewed degree type. Data: Bachelor's: Female 616, Male 529; Master's: Female 194, Male 171; Professional: Female 30, Male 44; Doctorate: Female 16, Male 26.",
+    "aire_mistral_answer": "Overall Gender Distribution: Total degrees = 616 + 529 + 194 + 171 + 30 + 44 + 16 + 26 = 1,626 (thousand) Female percentage = (616 + 194 + 30 + 16) / 1,626 × 100 ≈ 52.6% Male percentage = (529 + 171 + 44 + 26) / 1,626 × 100 ≈ 47.4% Distribution of Degrees Within Each Gender: Female: Bachelor's 71.9%, Master's 22.7%, Professional 3.5%, Doctorate 1.9% Male: Bachelor's 68.7%, Master's 22.2%, Professional 5.7%, Doctorate 3.4% Conditional Probability of Selecting a Male Given a Master's Degree: P(Male | Master's) = 171 / (171 + 194) = 171 / 365 ≈ 0.468 Gender Gap Index for Each Degree Type: Bachelor's: |529 - 616| / (529 + 616) = 87 / 1145 ≈ 0.076 Master's: |171 - 194| / (171 + 194) = 23 / 365 ≈ 0.063 Professional: |44 - 30| / (44 + 30) = 14 / 74 ≈ 0.189 Doctorate: |26 - 16| / (26 + 16) = 10 / 42 ≈ 0.238 Most Gender-Skewed Degree Type: Doctorate degrees show the highest gender gap index (0.238), with males earning 62% of doctorate degrees compared to 38% for females."
+  },
+  {
+    "id": 20,
+    "index": "C1.234",
+    "topic": "Confidence Interval",
+    "difficulty": "Basic",
+    "question": "A teacher records the test scores of 10 students with an average score of 78 and a standard deviation of 5. Calculate the 95% confidence interval for the mean test score.",
+    "aire_mistral_answer": "Step 1: Identify the sample mean (x̄) = 78, standard deviation (s) = 5, and sample size (n) = 10. Step 2: Compute the standard error of the mean (SE) = s / √n = 5 / √10 ≈ 1.581. Step 3: Find the t-value for a 95% confidence level with df = 9 (t ≈ 2.262). Step 4: Calculate the margin of error (ME) = t × SE = 2.262 × 1.581 ≈ 3.58. Step 5: Construct the confidence interval: Lower limit = x̄ - ME = 78 - 3.58 = 74.42, Upper limit = x̄ + ME = 78 + 3.58 = 81.58. Step 6: Thus, the 95% confidence interval is (74.42, 81.58). Conclusion: The 95% confidence interval for the mean test score is (74.42, 81.58)."
+  },
+  {
+    "id": 21,
+    "index": "C1.456",
+    "topic": "Confidence Interval",
+    "difficulty": "Basic",
+    "question": "A sample of 18 students has an average test score of 72 with a standard deviation of 8. Calculate the 95% confidence interval for the average test score.",
+    "aire_mistral_answer": "Step 1: Identify the sample mean (x̄) = 72, standard deviation (s) = 8, and sample size (n) = 18. Step 2: Compute the standard error of the mean (SE) = s / √n = 8 / √18 ≈ 1.886. Step 3: Find the t-value for a 95% confidence level with df = 17 (t ≈ 2.110). Step 4: Calculate the margin of error (ME) = t × SE = 2.110 × 1.886 ≈ 3.98. Step 5: Construct the confidence interval: Lower limit = x̄ - ME = 72 - 3.98 = 68.02, Upper limit = x̄ + ME = 72 + 3.98 = 75.98. Step 6: Thus, the 95% confidence interval is (68.02, 75.98). Conclusion: The 95% confidence interval for the average test score is (68.02, 75.98)."
+  },
+  {
+    "id": 22,
+    "index": "C1.789",
+    "topic": "Population Proportion",
+    "difficulty": "Basic",
+    "question": "A market research firm is hired to estimate the proportion of adults in a large city who own smartphones. A random sample of 500 adult residents is surveyed, and 421 say they own smartphones. Using a 95% confidence level, compute a confidence interval for the true proportion of adult residents who own smartphones.",
+    "aire_mistral_answer": "Answer extraction failed"
+  },
+  {
+    "id": 23,
+    "index": "C2.123",
+    "topic": "Confidence Interval for a Mean",
+    "difficulty": "Intermediate",
+    "question": "The General Social Survey asked the question: 'For how many days during the past 30 days was your mental health, which includes stress, depression, and problems with emotions, not good?' Based on responses from 1,151 US residents, the survey reported a 95% confidence interval of 3.40 to 4.24 days in 2010. (a) Interpret this interval in context of the data. (b) What does '95% confident' mean? Explain in the context of the application. (c) Suppose the researchers think a 99% confidence level would be more appropriate for this interval. Will this new interval be smaller or wider than the 95% confidence interval? (d) If a new survey were to be done with 500 Americans, do you think the standard error of the estimate would be larger, smaller, or about the same?",
+    "aire_mistral_answer": "The confidence interval of 3.40 to 4.24 days indicates that we can be 95% confident that the true average number of days with poor mental health is within this range. Being '95% confident' means that if we were to repeat the survey many times and calculate a confidence interval each time, we would expect 95% of those intervals to contain the true average number of days with poor mental health. A 99% confidence level would require a wider interval because it is more certain, meaning the interval would be larger to capture the true average with 99% confidence. If a new survey were done with only 500 Americans, the standard error of the estimate would be larger because the sample size is smaller. A larger sample size typically provides a more precise estimate. Explanation: Confidence intervals indicate the range within which the true average is likely to fall, and the confidence level reflects the probability that the interval contains the true average. A higher confidence level requires a wider interval, and a larger sample size generally results in a more precise estimate with a smaller standard error."
+  },
+  {
+    "id": 24,
+    "index": "EXTRACTED_25",
+    "topic": "Confidence Interval",
+    "difficulty": "Intermediate",
+    "question": "A manager is about to oversee the mass production of a new tire model in her factory, and she would like to estimate what proportion of these tires will be rejected through quality control. The quality control team has monitored the last three tire models produced by the factory, failing 1.7% of tires in the first model, 6.2% of the second model, and 1.3% of the third model. The manager would like to examine enough tires to estimate the failure rate of the new tire model to within about 1% with a 90% confidence level. Perform the sample size computation for each past model separately.",
+    "aire_mistral_answer": "Use the sample size formula: n = (Z^2 × p × (1 - p)) / E^2, where Z = 1.645 for 90% confidence, p is the failure rate, and E = 0.01 is the margin of error. For the first model with failure rate p = 0.017: n = (1.645^2 × 0.017 × 0.983) / 0.01^2 = (2.706 × 0.0167) / 0.0001 ≈ 452 For the second model with failure rate p = 0.062: n = (1.645^2 × 0.062 × 0.938) / 0.01^2 = (2.706 × 0.0582) / 0.0001 ≈ 1,575 For the third model with failure rate p = 0.013: n = (1.645^2 × 0.013 × 0.987) / 0.01^2 = (2.706 × 0.0128) / 0.0001 ≈ 347 Conclusion: The manager should inspect approximately 452 tires for the first model, 1,575 for the second model, and 347 for the third model to estimate the failure rate to within about 1% with a 90% confidence level."
+  },
+  {
+    "id": 25,
+    "index": "C3.567",
+    "topic": "Confidence Intervals",
+    "difficulty": "Advanced",
+    "question": "You are given a dataset assumed to be i.i.d. from a normal distribution: X₁, ..., X₂₅ ~ N(μ, σ²). Let τ be the 95th percentile of the distribution, i.e., P(X < τ) = 0.95. Suppose the observed data are: 3.23, -2.50, 1.88, -0.68, 4.43, 0.17, 1.03, -0.07, -0.01, 0.76, 1.76, 3.18, 0.33, -0.31, 0.30, -0.61, 1.52, 5.43, 1.54, 2.28, 0.42, 2.33, -1.03, 4.00, 0.39. Tasks: 1. Find the MLE of τ (the 95th percentile). 2. Find the standard error of the MLE using the delta method. 3. Estimate the standard error using the parametric bootstrap.",
+    "aire_mistral_answer": "Calculate the sample mean x̄ = (sum of all values) / 25 ≈ 1.257 and sample standard deviation s ≈ 1.816. The MLE of τ is τ̂ = x̄ + z₀.₉₅ × s = 1.257 + 1.645 × 1.816 ≈ 4.246, where z₀.₉₅ = 1.645. Using the delta method, the standard error of τ̂ is approximately SE(τ̂) = s × √(1/n + z₀.₉₅²/(2n)) ≈ 1.816 × √(1/25 + 1.645²/50) ≈ 0.525. For the parametric bootstrap, generate B bootstrap samples from N(x̄, s²), compute τ̂ for each sample, and estimate the standard error as the standard deviation of the bootstrap estimates. Conclusion: The MLE of τ is approximately 4.246, with standard error estimated using the delta method as approximately 0.525."
+  },
+  {
+    "id": 26,
+    "index": "D1.234",
+    "topic": "Sampling Distribution and Central Limit Theorem",
+    "difficulty": "Intermediate",
+    "question": "Suppose that the height of men has mean 68 inches and standard deviation 2.6 inches. We draw a random sample of 100 men. Find (approximately) the probability that the average height of men in our sample will be at least 68 inches.",
+    "aire_mistral_answer": "Step 1: Define the random variable X̄, which is the sample mean of the heights of the men in the sample. Step 2: By the Central Limit Theorem, X̄ ~ N(μ, σ²/n) = N(68, 2.6²/100). Step 3: Calculate the standard deviation of X̄, which is σ_X̄ = σ / √n = 2.6 / √100 = 0.26. Step 4: Standardize using the z-score: z = (X̄ - μ) / σ_X̄ = (68 - 68) / 0.26 = 0. Step 5: Find P(X̄ ≥ 68) = P(Z ≥ 0) = 0.5. Conclusion: The probability that the average height of men in our sample will be at least 68 inches is 0.5 or 50%."
+  },
+  {
+    "id": 27,
+    "index": "D2.345",
+    "topic": "Parameter Estimation",
+    "difficulty": "Intermediate",
+    "question": "A multiple choice exam has 4 choices per question. A student has a 0.5 probability of knowing the answer, a 0.25 probability of being able to eliminate one wrong choice, and a 0.25 probability of guessing blindly. If they know the answer, they will get it correct. If not, they guess from 3 or 4 options. If a student answers a question correctly, what is the probability they actually knew the answer?",
+    "aire_mistral_answer": "Let K = event that student knows the answer, C = event that student answers correctly. Given information: P(K) = 0.5 P(eliminate one choice) = 0.25 P(guess blindly) = 0.25 P(C|K) = 1 (if they know it, they get it right) P(C|eliminate one choice) = 1/3 (guess from 3 remaining) P(C|guess blindly) = 1/4 (guess from 4 choices) Using the law of total probability: P(C) = P(C|K) × P(K) + P(C|eliminate) × P(eliminate) + P(C|blind) × P(blind) P(C) = 1 × 0.5 + (1/3) × 0.25 + (1/4) × 0.25 = 0.5 + 0.083 + 0.0625 = 0.646 Using Bayes' theorem: P(K|C) = P(C|K) × P(K) / P(C) = (1 × 0.5) / 0.646 ≈ 0.774 Conclusion: The probability that the student actually knew the answer given they answered correctly is approximately 0.774."
+  },
+  {
+    "id": 28,
+    "index": "D2.456",
+    "topic": "Sampling Distributions",
+    "difficulty": "Basic",
+    "question": "The mean and standard deviation of the tax value of all vehicles registered in a certain state are μ = $13,525 and σ = $4,180. Suppose random samples of size 100 are drawn from this population. What are the mean μ_X̄ and standard deviation σ_X̄ of the sample mean X̄?",
+    "aire_mistral_answer": "The mean of the sample mean X̄ is μ_X̄ = μ = $13,525. The standard deviation of the sample mean X̄ is σ_X̄ = σ / √n = 4180 / √100 = 418. Conclusion: The mean of the sample mean is $13,525, and the standard deviation of the sample mean is $418."
+  },
+  {
+    "id": 29,
+    "index": "D2.567",
+    "topic": "Confidence Intervals",
+    "difficulty": "Intermediate",
+    "question": "There were 2430 Major League Baseball (MLB) games played in 2009, and the home team won in 54.9% of the games. If we consider the games played in 2009 as a sample of all MLB games, find and interpret a 90% confidence interval for the proportion of games the home team wins in Major League Baseball.",
+    "aire_mistral_answer": "Identify the sample proportion (p̂) of home team wins: 0.549. Calculate the sample size (n): 2430. Compute the standard error (SE) for the proportion: SE = √[p̂(1 - p̂) / n] = √[0.549 × 0.451 / 2430] ≈ 0.010. Find the z-value for a 90% confidence level (z ≈ 1.645). Calculate the margin of error (ME): ME = z × SE = 1.645 × 0.010 ≈ 0.016. Construct the confidence interval: Lower limit = p̂ - ME = 0.549 - 0.016 = 0.533, Upper limit = p̂ + ME = 0.549 + 0.016 = 0.565. Thus, the 90% confidence interval is (0.533, 0.565). \"aire_mistral_answer\": \"For each of the following assertions, state whether it is a legitimate statistical hypothesis and why: a. H₀: σ = 100 b. H₀: σ ≥ 45 c. H₀: σ ≤ 20 d. H₀: σ₁ / σ₂ = 1 e. H₀: X² ≤ 55 f. H₀: λ ≠ 0.01, where λ is the parameter of an exponential distribution used to model component lifetime. a. Yes, this is a legitimate hypothesis about the population standard deviation being equal to a specific value. b. Yes, this is a legitimate hypothesis about the population standard deviation being greater than or equal to a specific value. c. Yes, this is a legitimate hypothesis about the population standard deviation being less than or equal to a specific value. d. Yes, this is a legitimate hypothesis about the ratio of two population standard deviations being equal to 1. e. Yes, this is a legitimate hypothesis about a chi-squared statistic being less than or equal to a specific value. f. No, this is not a legitimate null hypothesis because it uses ≠ (not equal). Null hypotheses typically use =, ≤, or ≥. Explanation: Statistical hypotheses must be about parameters that are meaningful and testable in the context of the statistical model. Hypotheses a through e are all legitimate because they make specific claims about population parameters or test statistics that can be tested. Hypothesis f is not legitimate as a null hypothesis because it uses inequality (≠), which is typically reserved for alternative hypotheses."
+  },
+  {
+    "id": 30,
+    "index": "E1.123",
+    "topic": "Hypothesis Testing",
+    "difficulty": "Basic",
+    "question": "For each of the following assertions, state whether it is a legitimate statistical hypothesis and why: a. H₀: σ = 100 b. H₀: σ ≥ 45 c. H₀: σ ≤ 20 d. H₀: σ₁ / σ₂ = 1 e. H₀: X² ≤ 55 f. H₀: λ ≠ 0.01, where λ is the parameter of an exponential distribution used to model component lifetime.",
+    "aire_mistral_answer": "Answer extraction failed"
+  },
+  {
+    "id": 31,
+    "index": "E1.234",
+    "topic": "Hypothesis Testing",
+    "difficulty": "Intermediate",
+    "question": "A motor manufacturer wishes to replace steel suspension components with aluminium ones to improve performance and fuel efficiency. Tensile strength tests are carried out on samples from two components. The data is as follows: Component 1: n = 15, mean = 90 kg/mm², standard deviation = 2.3; Component 2: n = 10, mean = 88 kg/mm², standard deviation = 2.2. At the 5% significance level, is there a statistically significant difference in the tensile strengths of the two components?",
+    "aire_mistral_answer": "State the null hypothesis H₀: μ₁ = μ₂ and the alternative hypothesis H₁: μ₁ ≠ μ₂. Use the two-sample t-test assuming unequal variances (Welch's t-test). Calculate the pooled standard error: SE = √[(s₁²/n₁) + (s₂²/n₂)] = √[(2.3²/15) + (2.2²/10)] = √[0.353 + 0.484] = √0.837 ≈ 0.915. Calculate the t-statistic: t = (x̄₁ - x̄₂) / SE = (90 - 88) / 0.915 ≈ 2.19. Calculate degrees of freedom using Welch's formula: df ≈ 19.8 ≈ 20. Find the critical t-value for a two-tailed test with df = 20 at α = 0.05: t₀.₀₂₅,₂₀ ≈ ±2.086. Since |2.19| > 2.086, reject the null hypothesis. Conclusion: There is a statistically significant difference in the tensile strengths of the two components at the 5% significance level."
+  },
+  {
+    "id": 32,
+    "index": "E2.345",
+    "topic": "ANOVA",
+    "difficulty": "Intermediate",
+    "question": "In a psychology class, the average grade is known to be 67.5 points with a population standard deviation of 9.5. A researcher samples 20 psychology students and finds their average grade is 72.3. Test at the 5% significance level whether psychology students score differently than the class average.",
+    "aire_mistral_answer": "Define the hypotheses: H₀: μ = 67.5 (mean score is 67.5) and H₁: μ ≠ 67.5 (mean score is not 67.5). Given σ = 9.5, n = 20, and sample mean = 72.3. Use the z-test formula: z = (x̄ - μ) / (σ / √n). Calculate z: z = (72.3 - 67.5) / (9.5 / √20) = 4.8 / 2.124 ≈ 2.26. Find the critical z-values for a two-tailed test at α = 0.05: ±1.96. Since 2.26 > 1.96, reject H₀. Conclusion: The data provides sufficient evidence to conclude that the mean score of psychology students is different from the class average at the 5% significance level."
+  },
+  {
+    "id": 33,
+    "index": "E2.456",
+    "topic": "ANOVA",
+    "difficulty": "Intermediate",
+    "question": "A nutritionist tests the effects of three different meal plans (Plan A, Plan B, Plan C) on weight loss over a 6-week period. The weight loss (in pounds) for each plan is as follows: Plan A = [6, 7, 8], Plan B = [5, 6, 7], Plan C = [8, 9, 10]. Conduct a one-way ANOVA test.",
+    "aire_mistral_answer": "Calculate the group means: Mean of Plan A = (6 + 7 + 8) / 3 = 7, Mean of Plan B = (5 + 6 + 7) / 3 = 6, Mean of Plan C = (8 + 9 + 10) / 3 = 9. Calculate the overall mean: Overall mean = (6 + 7 + 8 + 5 + 6 + 7 + 8 + 9 + 10) / 9 = 7.33. Calculate the sum of squares between groups (SSB): SSB = 3 × [(7 - 7.33)² + (6 - 7.33)² + (9 - 7.33)²] = 3 × [0.109 + 1.769 + 2.789] = 3 × 4.667 = 14. Calculate the sum of squares within groups (SSW): SSW = [(6-7)² + (7-7)² + (8-7)²] + [(5-6)² + (6-6)² + (7-6)²] + [(8-9)² + (9-9)² + (10-9)²] = [1 + 0 + 1] + [1 + 0 + 1] + [1 + 0 + 1] = 6. Calculate the degrees of freedom: df_between = 2, df_within = 6, df_total = 8. Calculate mean squares: MSB = SSB / df_between = 14 / 2 = 7, MSW = SSW / df_within = 6 / 6 = 1. Calculate the F-statistic: F = MSB / MSW = 7 / 1 = 7. Compare with critical value: F₀.₀₅,₂,₆ ≈ 5.14. Since 7 > 5.14, reject H₀. Conclusion: There is a significant difference between the meal plans at the 5% significance level."
+  },
+  {
+    "id": 34,
+    "index": "E2.567",
+    "topic": "Hypothesis Testing (Proportions)",
+    "difficulty": "Intermediate",
+    "question": "A newspaper reported that 75% of students regularly cycle to college. A college dean believes that figure to be different at his college. He asks a sample of 160 students, and 109 say they do cycle. Test the dean's belief at the 5% level of significance.",
+    "aire_mistral_answer": "Define the hypotheses: H₀: p = 0.75 (proportion of students who cycle) and H₁: p ≠ 0.75 (proportion of students who cycle is different). Calculate the sample proportion: p̂ = 109 / 160 = 0.681. Use the z-test formula: z = (p̂ - p) / √[p(1 - p) / n]. Compute the z-value: z = (0.681 - 0.75) / √[0.75 × 0.25 / 160] = -0.069 / √0.00117 = -0.069 / 0.0342 ≈ -2.02. Find the critical z-values for a two-tailed test at α = 0.05: ±1.96. Since |-2.02| > 1.96, reject H₀. Conclusion: The dean's belief is supported; there is significant evidence that the proportion of students who cycle at his college is different from 75% at the 5% significance level."
+  },
+  {
+    "id": 35,
+    "index": "E2.678",
+    "topic": "Hypothesis Testing - Binomial to Normal Approximation",
+    "difficulty": "Intermediate",
+    "question": "In a test, the questions are all multiple choice with five possible options. (a) In a test with twelve questions, one student gets four questions correct. Test, at the 10% significance level, the null hypothesis that the student is guessing the answers. (b) In a further test there are 120 questions. The same student took the test and got 32 correct. Test, at the 10% significance level, whether there is evidence to show the student is guessing the answers.",
+    "aire_mistral_answer": "Part (a): H₀: p = 0.2 (student is guessing), H₁: p > 0.2 (student is not just guessing). Use binomial distribution with n = 12, p = 0.2. P(X ≥ 4) = 1 - P(X ≤ 3) = 1 - [P(X=0) + P(X=1) + P(X=2) + P(X=3)]. Calculate: P(X ≥ 4) ≈ 0.133. Since 0.133 > 0.10, fail to reject H₀. Part (b): H₀: p = 0.2, H₁: p > 0.2. Use normal approximation: μ = np = 120 × 0.2 = 24, σ = √(np(1-p)) = √(120 × 0.2 × 0.8) = 4.38. z = (32 - 24) / 4.38 ≈ 1.83. Critical value at α = 0.10 is z₀.₁₀ = 1.28. Since 1.83 > 1.28, reject H₀. Conclusion: In part (a), there is insufficient evidence to conclude the student is not guessing. In part (b), there is evidence that the student is performing better than random guessing."
+  },
+  {
+    "id": 36,
+    "index": "E2.789",
+    "topic": "Hypothesis testing",
+    "difficulty": "Intermediate",
+    "question": "Georgianna claims that in a small city renowned for its music school, the average child takes less than 5 years of piano lessons. A random sample of 24 children from the city shows a mean of 4.6 years of piano lessons with a standard deviation of 2.2 years. Evaluate Georgianna's claim using a hypothesis test at a 0.05 significance level.",
+    "aire_mistral_answer": "State the null hypothesis H₀: μ ≥ 5 and the alternative hypothesis Hₐ: μ < 5. Use a one-sample t-test since σ is unknown and n < 30. Calculate the test statistic: t = (x̄ - μ₀) / (s / √n) = (4.6 - 5) / (2.2 / √24) = -0.4 / 0.449 ≈ -0.89. Find the critical t-value for a one-tailed test with df = 23 at α = 0.05: t₀.₀₅,₂₃ ≈ -1.714. Since -0.89 > -1.714, fail to reject H₀. Calculate p-value: p ≈ 0.19. Conclusion: There is insufficient evidence to support Georgianna's claim that the average child takes less than 5 years of piano lessons at the 5% significance level."
+  },
+  {
+    "id": 37,
+    "index": "E2.890",
+    "topic": "One-Sample Z-Test (Known σ)",
+    "difficulty": "Intermediate",
+    "question": "Jeffrey, an eight-year-old, had an established mean time of 16.43 seconds for swimming the 25-yard freestyle, with a population standard deviation of 0.8 seconds. His father Frank bought him expensive goggles, suspecting they might help him swim faster. In 15 timed swims using the goggles, Jeffrey's sample mean time was 16 seconds. Test whether the goggles helped Jeffrey swim faster, using a significance level of α = 0.05. Assume the swim times are normally distributed.",
+    "aire_mistral_answer": "State the null hypothesis H₀: μ = 16.43 and the alternative hypothesis Hₐ: μ < 16.43. Calculate the standard error of the sample mean: σ_x̄ = σ / √n = 0.8 / √15 ≈ 0.207. Compute the z-score for the observed sample mean (16 seconds): z = (x̄ - μ) / σ_x̄ = (16 - 16.43) / 0.207 ≈ -2.08. Find the critical z-value for a one-tailed test at α = 0.05: -1.645. Since -2.08 < -1.645, reject the null hypothesis. Calculate p-value: p ≈ 0.019. Conclusion: The goggles helped Jeffrey swim faster at the 5% significance level. The evidence supports that his mean swimming time decreased significantly."
+  },
+  {
+    "id": 38,
+    "index": "E3.234",
+    "topic": "One Sample t-test",
+    "difficulty": "Advanced",
+    "question": "Use the data [0.86, 1.53, 1.57, 1.81, 0.99, 1.09, 1.29, 1.78, 1.29, 1.58], comprising a sample of n = 10 lactic acid measurements in cheese. The lactic acid measurements are a random sample from a normal distribution with unknown mean μ and unknown variance σ². Hypotheses: H₀: μ ≤ 1.2, H₁: μ > 1.2. Tasks: a. Perform the level α₀ = 0.05 test of these hypotheses. b. Compute the p-value.",
+    "aire_mistral_answer": "a. To perform the level α₀ = 0.05 test, follow these steps: Calculate the sample mean: x̄ = (0.86 + 1.53 + 1.57 + 1.81 + 0.99 + 1.09 + 1.29 + 1.78 + 1.29 + 1.58) / 10 = 1.379. Calculate the sample standard deviation: s = √[Σ(xᵢ - x̄)² / (n-1)] ≈ 0.309. Compute the standard error of the mean: SE = s / √n = 0.309 / √10 ≈ 0.098. Calculate the t-statistic: t = (x̄ - μ₀) / SE = (1.379 - 1.2) / 0.098 ≈ 1.83. Find the critical t-value for a one-tailed test with df = 9 at α = 0.05: t₀.₀₅,₉ ≈ 1.833. Since 1.83 < 1.833, fail to reject H₀. b. The p-value is P(T₉ > 1.83) ≈ 0.05. Conclusion: At the 5% significance level, there is insufficient evidence to conclude that μ > 1.2. The p-value is approximately 0.05."
+  },
+  {
+    "id": 39,
+    "index": "E3.345",
+    "topic": "Hypothesis Testing and Nonparametric Inference",
+    "difficulty": "Advanced",
+    "question": "In 1861, 10 essays appeared in the New Orleans Daily Crescent signed 'Quintus Curtius Snodgrass.' Some suspected they were actually written by Mark Twain. To investigate, we consider the proportion of three-letter words in the texts. From 8 Twain essays: [0.225, 0.262, 0.217, 0.240, 0.230, 0.229, 0.235, 0.217]. From 10 Snodgrass essays: [0.209, 0.205, 0.196, 0.210, 0.202, 0.207, 0.224, 0.223, 0.220, 0.201]. (a) Perform a Wald test for equality of the means. Use the nonparametric plug-in estimator (difference of the sample means). Report the p-value and a 95% confidence interval for the difference of means. What do you conclude? (b) Use a permutation test to avoid the large-sample approximation. What is your conclusion?",
+    "aire_mistral_answer": "(a) Wald test: Calculate sample means: x̄_Twain = 0.2319, x̄_Snodgrass = 0.2097. Calculate sample variances: s²_Twain = 0.000297, s²_Snodgrass = 0.000086. Difference of means: d̂ = 0.2319 - 0.2097 = 0.0222. Standard error: SE = √(s²_Twain/n_Twain + s²_Snodgrass/n_Snodgrass) = √(0.000297/8 + 0.000086/10) ≈ 0.0071. Wald statistic: W = d̂ / SE = 0.0222 / 0.0071 ≈ 3.13. P-value: p ≈ 0.002 (two-tailed). 95% CI: 0.0222 ± 1.96 × 0.0071 = (0.008, 0.036). (b) Permutation test: Pool all 18 observations and randomly reassign to two groups of sizes 8 and 10. Calculate the difference in means for each permutation. Compare the observed difference (0.0222) to the permutation distribution. The permutation test p-value would be approximately 0.003. Conclusion: Both tests provide strong evidence (p < 0.01) that the mean proportion of three-letter words differs between Twain and Snodgrass essays, suggesting they were written by different authors."
+  },
+  {
+    "id": 40,
+    "index": "E3.456",
+    "topic": "Hypothesis Testing – Binomial Distribution",
+    "difficulty": "Advanced",
+    "question": "A paper company finds that, over time, defects occur at a rate of 1 in every 250 sheets of paper produced (p = 0.004). After switching to recycled paper, the company examines a sample of 300 sheets and finds 5 defective sheets. An employee conducts a hypothesis test at the 5% level of significance to assess whether the switch has affected the defect rate. The employee assumes X ~ B(300, p), sets H₀: p = 0.004 and H₁: p ≠ 0.004, and calculates P(X = 5 | p = 0.004) = 0.9985. Based on this, they conclude: 'Since 0.9985 > 0.05, accept H₀. There is no evidence that the defect rate has changed.' Explain the mistakes and determine the correct conclusion.",
+    "aire_mistral_answer": "Mistakes identified: Wrong probability calculation: P(X = 5 | p = 0.004) = 0.9985 is incorrect. The correct calculation should be P(X = 5) ≈ 0.0036. Wrong p-value: The p-value should be P(X ≥ 5) for a two-tailed test, not P(X = 5). Incorrect interpretation: The probability 0.9985 represents the cumulative probability P(X ≤ 5), not the exact probability. Wrong terminology: We don't 'accept' H₀, we 'fail to reject' it. Correct analysis: Expected defects under H₀: μ = np = 300 × 0.004 = 1.2. Observed defects: 5 (much higher than expected). Using normal approximation: z = (5 - 1.2) / √(1.2 × 0.996) ≈ 3.48. P-value for two-tailed test: 2 × P(Z > 3.48) ≈ 0.0005. Since 0.0005 < 0.05, reject H₀. Correct conclusion: There is strong evidence that the defect rate has changed after switching to recycled paper. The observed defect rate (5/300 ≈ 0.0167) is significantly higher than the historical rate of 0.004."
+  },
+  {
+    "id": 41,
+    "index": "E3.567",
+    "topic": "One-Way ANOVA – Hospital ICU Hours",
+    "difficulty": "Advanced",
+    "question": "The Eastside Health Authority collects data on hours spent in intensive care by patients with suspected coronary heart attacks across five hospitals (A–E). The data are as follows: Hospital A: 30, 25, 12, 23, 16; Hospital B: 42, 57, 47, 30; Hospital C: 65, 46, 55, 27; Hospital D: 67, 58, 81; Hospital E: 70, 63, 80. Use a one-factor analysis of variance to test, at the 1% level of significance, whether there is a difference in mean ICU hours between hospitals.",
+    "aire_mistral_answer": "Answer extraction failed"
+  },
+  {
+    "id": 42,
+    "index": "F1.234",
+    "topic": "Bayes' Theorem",
+    "difficulty": "Basic",
+    "question": "A spam filter is designed by looking at commonly occurring phrases in spam. Suppose that 80% of email is spam. In 10% of the spam emails, the phrase 'free money' is used, whereas this phrase is only used in 1% of non-spam emails. A new email has just arrived, which does mention 'free money'. What is the probability that it is spam?",
+    "aire_mistral_answer": "Use Bayes' Rule to find the probability that the email is spam given that it contains the phrase 'free money'. Define events: S = email is spam, F = email contains 'free money'. Given: P(S) = 0.80, P(F|S) = 0.10, P(F|S^c) = 0.01. Calculate P(F) using the law of total probability: P(F) = P(F|S) × P(S) + P(F|S^c) × P(S^c) = 0.10 × 0.80 + 0.01 × 0.20 = 0.08 + 0.002 = 0.082. Apply Bayes' theorem: P(S|F) = P(F|S) × P(S) / P(F) = (0.10 × 0.80) / 0.082 = 0.08 / 0.082 ≈ 0.976. Conclusion: The probability that the email is spam given that it contains 'free money' is approximately 0.976 or 97.6%."
+  },
+  {
+    "id": 43,
+    "index": "F2.345",
+    "topic": "Bayesian Statistics",
+    "difficulty": "Intermediate",
+    "question": "Given a Beta(5, 3) prior and observing 25 successes and 10 failures, find the posterior distribution parameters and compute the posterior variance.",
+    "aire_mistral_answer": "Prior distribution is Beta(5, 3). Observed data: 25 successes and 10 failures. Update the prior with observed data: Posterior distribution = Beta(5 + 25, 3 + 10) = Beta(30, 13). Compute the posterior mean: Mean = α / (α + β) = 30 / (30 + 13) = 30 / 43 ≈ 0.698. Compute the posterior variance: Variance = (α × β) / [(α + β)² × (α + β + 1)] = (30 × 13) / [43² × 44] = 390 / 81,224 ≈ 0.0048. Thus, the posterior distribution is Beta(30, 13) and the posterior variance is approximately 0.0048."
+  },
+  {
+    "id": 44,
+    "index": "F3.456",
+    "topic": "Bayes' Theorem – Inverted Probability",
+    "difficulty": "Advanced",
+    "question": "In Canada, about 0.35% of women over 40 will develop breast cancer in any given year. A common screening test for cancer is the mammogram, but it is not perfect. In 11% of patients with breast cancer, the test gives a false negative result. In 7% of patients without breast cancer, the test gives a false positive result. If we test a random woman over 40 for breast cancer using a mammogram and the test comes back positive, what is the probability that the patient actually has breast cancer?",
+    "aire_mistral_answer": "Define events: C = has cancer, T+ = positive test result. Given: P(C) = 0.0035, P(T+|C) = 0.89 (since false negative rate is 11%), P(T+|C^c) = 0.07. Calculate P(T+) using the law of total probability: P(T+) = P(T+|C) × P(C) + P(T+|C^c) × P(C^c) = 0.89 × 0.0035 + 0.07 × 0.9965 = 0.003115 + 0.069755 = 0.07287. Apply Bayes' theorem: P(C|T+) = P(T+|C) × P(C) / P(T+) = (0.89 × 0.0035) / 0.07287 = 0.003115 / 0.07287 ≈ 0.0427. Conclusion: The probability that a woman actually has breast cancer given that the mammogram test is positive is approximately 0.0427 or 4.27%."
+  },
+  {
+    "id": 45,
+    "index": "F3.567",
+    "topic": "Logistic Regression",
+    "difficulty": "Advanced",
+    "question": "A logistic regression model was fit to estimate the probability of receiving a callback based on whether a resume listed any honors. The model equation is: log_e(p_i / (1 - p_i)) = -2.4998 + 0.8668 × honors. (a) If a resume does not have honors listed, what is the probability of getting a callback? (b) What is the probability if the resume does list honors?",
+    "aire_mistral_answer": "For part (a): Substitute honors = 0 into the logistic regression equation: log_e(p_i / (1 - p_i)) = -2.4998 + 0.8668 × 0 = -2.4998. Solve for p_i: p_i / (1 - p_i) = e^(-2.4998), so p_i = e^(-2.4998) / (1 + e^(-2.4998)) ≈ 0.082. For part (b): Substitute honors = 1 into the logistic regression equation: log_e(p_i / (1 - p_i)) = -2.4998 + 0.8668 × 1 = -1.633. Solve for p_i: p_i / (1 - p_i) = e^(-1.633), so p_i = e^(-1.633) / (1 + e^(-1.633)) ≈ 0.163. Conclusion: The probability of getting a callback is approximately 0.082 if the resume does not list honors and 0.163 if it does list honors."
+  },
+  {
+    "id": 46,
+    "index": "F3.678",
+    "topic": "Logistic Regression",
+    "difficulty": "Advanced",
+    "question": "A logistic regression model is fitted using a binary predictor: whether an applicant had any type of honors listed on their resume (e.g., 'employee of the month'). The model is loge(p / (1 - p)) = -2.4998 + 0.8668 × honors. (a) What is the callback probability if a resume has no honors? (b) What is the probability if the resume includes honors?",
+    "aire_mistral_answer": "For part (a): Substitute honors = 0 into the logistic regression equation: loge(p / (1 - p)) = -2.4998 + 0.8668 × 0 = -2.4998. Solve for p: p / (1 - p) = e^(-2.4998), p = e^(-2.4998) / (1 + e^(-2.4998)) ≈ 0.082. For part (b): Substitute honors = 1 into the logistic regression equation: loge(p / (1 - p)) = -2.4998 + 0.8668 × 1 = -1.633. Solve for p: p / (1 - p) = e^(-1.633), p = e^(-1.633) / (1 + e^(-1.633)) ≈ 0.163. Conclusion: The callback probability for a resume with no honors is approximately 0.082, and for a resume with honors, it is approximately 0.163."
+  },
+  {
+    "id": 47,
+    "index": "F3.789",
+    "topic": "Bayesian Statistics",
+    "difficulty": "Advanced",
+    "question": "Assume a Gamma(4, 5) prior and observe 15 successes and 10 failures. Compute the posterior distribution parameters and posterior mean.",
+    "aire_mistral_answer": "Prior distribution is Gamma(4, 5). Observed data: 15 successes and 10 failures. Note: This appears to be a mismatch between the prior distribution (Gamma) and the likelihood (Binomial). Assuming this is intended to be a Gamma prior for a Poisson likelihood or should be a Beta prior for a Binomial likelihood. If treating as Beta prior for Binomial likelihood: Update the prior with observed data: Posterior distribution = Beta(4 + 15, 5 + 10) = Beta(19, 15). Compute the posterior mean: Mean = α / (α + β) = 19 / (19 + 15) = 19 / 34 ≈ 0.559. If treating as Gamma prior for Poisson likelihood: The Gamma distribution is not the conjugate prior for binomial data with successes and failures. Thus, assuming Beta prior: the posterior distribution is Beta(19, 15) and the posterior mean is approximately 0.559."
+  },
+  {
+    "id": 48,
+    "index": "F3.890",
+    "topic": "Bayesian Inference – Posterior Analysis",
+    "difficulty": "Advanced",
+    "question": "Suppose you are analyzing a clinical trial for a new drug. Historical data suggest that the probability of a patient responding to the standard treatment (prior probability) is about 0.2. In a new trial with the experimental drug, you observe that out of 30 patients, 10 respond positively. Assume a Beta(2,8) prior distribution for the response probability θ (where Beta(2,8) reflects the historical data). The likelihood is binomial: 10 successes out of 30 trials. Tasks: 1. Calculate the posterior distribution for θ. 2. Find the posterior mean and posterior mode. 3. Construct a 95% credible interval for θ.",
+    "aire_mistral_answer": "The prior distribution is Beta(2,8). The likelihood is binomial with 10 successes and 20 failures out of 30 trials. The posterior distribution is therefore Beta(2 + 10, 8 + 20) = Beta(12, 28). To find the posterior mean, use the mean of the Beta distribution: Mean = α / (α + β) = 12 / (12 + 28) = 12 / 40 = 0.30. To find the posterior mode, use the mode of the Beta distribution: Mode = (α - 1) / (α + β - 2) = (12 - 1) / (12 + 28 - 2) = 11 / 38 ≈ 0.289. To construct a 95% credible interval, find the 2.5th and 97.5th percentiles of the Beta(12, 28) distribution. Using statistical software or tables, the 2.5th percentile is approximately 0.168 and the 97.5th percentile is approximately 0.464. Thus, the 95% credible interval is (0.168, 0.464). Conclusion: The posterior distribution for θ is Beta(12, 28), with mean 0.30, mode 0.289, and 95% credible interval (0.168, 0.464)."
+  },
+  {
+    "id": 49,
+    "index": "F3.901",
+    "topic": "Logistic Regression – Binary Classification",
+    "difficulty": "Advanced",
+    "question": "Suppose you are analyzing data from a medical study where the outcome is whether a patient develops a certain disease (yes/no), and the predictors are age (in years) and cholesterol level (mg/dL). The following logistic regression output is obtained: Variable: Intercept, Coefficient: -6.5, Standard Error: 1.2, p-value: <0.001; Variable: Age, Coefficient: 0.04, Standard Error: 0.01, p-value: <0.001; Variable: Cholesterol, Coefficient: 0.02, Standard Error: 0.005, p-value: <0.001. Tasks: 1. Write the equation of the logistic regression model. 2. For a patient aged 50 with a cholesterol level of 200 mg/dL, calculate the log-odds of developing the disease. 3. Calculate the predicted probability of developing the disease for this patient. 4. Interpret the coefficients for age and cholesterol.",
+    "aire_mistral_answer": "The equation of the logistic regression model is: logit(P) = log(P / (1 - P)) = -6.5 + 0.04 × Age + 0.02 × Cholesterol. Substituting Age = 50 and Cholesterol = 200 into the equation: logit(P) = -6.5 + 0.04 × 50 + 0.02 × 200 = -6.5 + 2 + 4 = -0.5. To find the predicted probability, convert the log-odds back to probability: P = e^(-0.5) / (1 + e^(-0.5)) = 0.606 / (1 + 0.606) ≈ 0.378. The coefficients interpretation: Age coefficient (0.04): For each one-year increase in age, the log-odds of developing the disease increases by 0.04, holding cholesterol constant. Cholesterol coefficient (0.02): For each 1 mg/dL increase in cholesterol level, the log-odds of developing the disease increases by 0.02, holding age constant. Both effects are statistically significant (p < 0.001). Conclusion: The logistic regression model shows that both age and cholesterol level are significant predictors of disease development. For a 50-year-old patient with cholesterol level 200 mg/dL, the predicted probability of developing the disease is approximately 37.8%."
+  }
+]
