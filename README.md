@@ -1,4 +1,4 @@
-# Can LLM Reasoning Be Trusted? A Comparative Study Using Human Benchmarking on Statistical Tasks
+# Can LLM Reasoning Be Trusted? A Comparative Study: Using Human Benchmarking on Statistical Tasks
 
 [![Paper](https://img.shields.io/badge/Paper-PDF-red)](fine_tuning_LLMs_for_statistics__new_ownership_\(16\).pdf)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
