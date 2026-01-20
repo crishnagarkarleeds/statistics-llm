@@ -236,7 +236,7 @@ To assess **metric reliability** against human judgment:
 
 ### 3. Model-Specific Evaluation Patterns
 
-![Radar Chart: Correlation Analysis](images/radar_chart.pdf)
+![Radar Chart: Correlation Analysis](images/radar_chart_page-0001.jpg)
 
 *Figure: Kendall's τ correlation between evaluation metrics and human scores across four dimensions (Correctness, Explanation, Reasoning, Weighted). LLM-as-judge methods (colored lines) demonstrate substantially higher correlation with human evaluation compared to traditional automated metrics (gray lines).*
 
