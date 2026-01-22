@@ -1,12 +1,24 @@
 # Can LLM Reasoning Be Trusted? A Comparative Study: Using Human Benchmarking on Statistical Tasks
 
-[![Paper](https://img.shields.io/badge/Paper-PDF-red)](fine_tuning_LLMs_for_statistics__new_ownership_\(16\).pdf)
+[![Paper](https://img.shields.io/badge/Paper-PDF-red)](https://arxiv.org/abs/2601.14479)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
 > **Authors**: Crish Nagarkar¹, Leonid Bogachev¹, Serge Sharoff²
 > ¹Department of Statistics, School of Mathematics
 > University of Leeds, Leeds LS2 9JT, UK
+
+```
+@misc{nagarkar2026llmreasoningtrustedcomparative,
+      title={Can LLM Reasoning Be Trusted? A Comparative Study: Using Human Benchmarking on Statistical Tasks}, 
+      author={Crish Nagarkar and Leonid Bogachev and Serge Sharoff},
+      year={2026},
+      eprint={2601.14479},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2601.14479}, 
+}
+```
 
 ---
 
